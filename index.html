@@ -73,9 +73,9 @@
                 playerSelection = capitalize(playerSelection);
                 let computerSelection = computerPlay();
                 let winner = playRound(playerSelection, computerSelection);
-                if (winner == winner.includes("Win")) {
+                if (winner.includes("Win")) {
                     playerScore = playerScore + 1;
-                } else if (winner == winner.includes("Lose")) {
+                } else if (winner.includes("Lose")) {
                     computerScore = computerScore + 1;
                 } else {}
                 console.log(winner);
